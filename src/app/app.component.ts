@@ -5,9 +5,14 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  // templateUrl: './app.component.html',
+  template: `
+    <h1>Welcome to {{title}}</h1>
+
+    <router-outlet></router-outlet>
+  `,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'first-ng-app-inline-style-18';
+  title = 'first-ng-app';
 }
