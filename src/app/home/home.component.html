@@ -2,3 +2,11 @@
 <!--<app-greeting [message]="'Hello World Overwriting'" />-->
 <!--<app-greeting message="Hello World Overwriting" />-->
 <app-greeting [message]="homeMessage()" />
+
+<br><label for="normal-input">Input with Event</label>
+<input id="normal-input" type="text" (keyup)="keyUpHandler()" >
+
+<br>
+
+<br><label for="input-with-event">Input with Event</label>
+<input id="input-with-event" type="text" (keyup)="keyUpHandlerWithEvent($event)" >
