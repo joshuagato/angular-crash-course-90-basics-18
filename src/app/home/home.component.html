@@ -1,12 +1,15 @@
 <p>home works!</p>
 <!--<app-greeting [message]="'Hello World Overwriting'" />-->
 <!--<app-greeting message="Hello World Overwriting" />-->
+
 <app-greeting [message]="homeMessage()" />
 
+<app-counter />
+
 <br><label for="normal-input">Input with Event</label>
-<input id="normal-input" type="text" (keyup)="keyUpHandler()" >
+<input id="normal-input" placeholder="Type something" type="text" (keyup)="keyUpHandler()" >
 
 <br>
 
 <br><label for="input-with-event">Input with Event</label>
-<input id="input-with-event" type="text" (keyup)="keyUpHandlerWithEvent($event)" >
+<input id="input-with-event" placeholder="Type something to be displayed" type="text" (keyup)="keyUpHandlerWithEvent($event)" >
