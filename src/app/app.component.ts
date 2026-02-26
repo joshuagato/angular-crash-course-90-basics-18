@@ -6,13 +6,13 @@ import {HeaderComponent} from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent],
   // templateUrl: './app.component.html',
   template: `
     <app-header />
 
     <main>
-        <app-home />
+      <router-outlet />
     </main>
   `,
   // styleUrl: './app.component.scss'
@@ -23,5 +23,5 @@ import {HeaderComponent} from './components/header/header.component';
   `
 })
 export class AppComponent {
-  title = 'first-ng-app';
+  title: string = 'first-ng-app';
 }
