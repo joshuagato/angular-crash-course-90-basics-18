@@ -15,5 +15,9 @@ header {
     ul {
       list-style: none;
     }
+
+    span, li {
+      cursor: pointer;
+    }
   }
 }
